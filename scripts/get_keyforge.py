@@ -17,5 +17,5 @@ if __name__ == "__main__":
 
     count_dict = get_keyforge()
 
-    with open("../data/keyforge_decks.tsv", mode='w') as fout:
+    with open("./data/keyforge_decks.tsv", mode='a+') as fout:
         print(datetime.now(), count_dict["count"], sep='\t', file=fout)
