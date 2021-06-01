@@ -4,9 +4,18 @@ name: Update KeyForge Count Hourly
 
 # Controls when the action will run. 
 on:
-    schedule:
+  schedule:
     # execute every hour
-    - cron:  '14 * * * *'
+  - cron:  '22 * * * *'
+    
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'     
+        required: true
+        default: 'warning'
+      tags:
+        description: 'Test scenario tags'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
