@@ -6,7 +6,7 @@ name: Update KeyForge Count Hourly
 on:
   schedule:
     # execute every hour
-  - cron:  '22 * * * *'
+  - cron:  '25 * * * *'
     
   workflow_dispatch:
     inputs:
@@ -41,7 +41,7 @@ jobs:
 
       # Runs the script
       - name: Fetch KeyForge
-        run: python ./script/get_keyforge.py
+        run: python ./scripts/get_keyforge.py
 
       - name: Commit files
         run: |
