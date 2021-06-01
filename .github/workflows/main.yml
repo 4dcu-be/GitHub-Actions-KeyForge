@@ -6,7 +6,7 @@ name: Update KeyForge Count Hourly
 on:
   schedule:
     # execute every hour
-  - cron:  '25 * * * *'
+    - cron:  '32 * * * *'
     
   workflow_dispatch:
     inputs:
