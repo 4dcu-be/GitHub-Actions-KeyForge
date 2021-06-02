@@ -4,7 +4,7 @@ import json
 from datetime import datetime
 
 
-def get_keyforge(url="https://www.keyforgegame.com/api/decks/count//"):
+def get_keyforge(url="https://www.keyforgegame.com/api/decks/count/"):
     ssl_context = ssl._create_unverified_context()
     req = Request(url, headers={"User-Agent": "Mozilla/5.0"})
     with urlopen(req, context=ssl_context) as response:
