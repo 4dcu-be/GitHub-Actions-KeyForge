@@ -36,7 +36,7 @@ jobs:
 
       - name: Commit files
         run: |
-          git config --local user.email "sebastian.proost@gmail.com"
+          git config --local user.email '${GITHUB_ACTOR}@users.noreply.github.com'
           git config --local user.name "fetch-keyforge[bot]"
           git commit -m "Add changes" -a
       - name: Push changes
